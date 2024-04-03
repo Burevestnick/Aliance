@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(49, 49, 49);
+  color: white;
+  height: 94px;
+}
+
+.header-logo{
+  padding: 25px 50px;
+}
+
+.header-nav {
+  display: flex;
+  flex-basis: 100%;
+  list-style: none;
+  padding: 0 50px;
+  margin: 0;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 50px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.header-phone {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+}
+
+.header-phone-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: inherit;
+  margin-right: 50px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+  color: white;
+  background: rgb(58, 113, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 60px;
+  gap: 10px;
+  border: none;
+  flex-shrink: 0;
+}
+
+.header-button{ 
+  height: 100%;
+}
