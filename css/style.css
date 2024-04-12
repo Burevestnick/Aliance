@@ -37,11 +37,17 @@ body {
   transition: background-color 0.2s;
 }
 
+.navbar-logo-svg {
+  width: 9rem;
+  height: 2.75rem;
+}
+
 
 .navbar-light {
   background-color: #fff;
   color: rgb(41, 45, 51);
   border: none;
+  height: 5.875rem;
 }
 
 .navbar-light .header-logo-path {
@@ -91,10 +97,10 @@ body {
 
 .header-nav-link {
   text-decoration: none;
-  font-size: .875rem;
-  margin-right: 3.125rem;
+  font-size: 1rem;
   font-weight: 400;
   color: inherit;
+  
 }
 
 .header-phone {
@@ -104,13 +110,14 @@ body {
   gap: .625rem;
 }
 
-.header-nav-link {
-  text-decoration: none;
-  font-size: 1rem;
+.phone-icon {
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
+
 .header-nav-item:not(:last-child){ 
-  margin-right: -2%;
+  margin-right: 2%;
 }
 
 .header-phone-link {
@@ -126,7 +133,7 @@ body {
   line-height: 160%;
   color: white;
   background: rgb(58, 113, 209);
-  padding: 1.625rem 3.75rem;
+  padding: 1.5625rem 3.75rem;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -284,11 +291,17 @@ body {
   width: 2.5rem;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1570px) {
   html {
     font-size: 14px;
   }
   .header-image {
     background-position: center;
+  }
+}
+
+@media (max-width: 1370px){
+  html { 
+    font-size: 12px;
   }
 }
