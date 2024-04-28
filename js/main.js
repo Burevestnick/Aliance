@@ -35,7 +35,32 @@ mMenuToggle.addEventListener('click', (event) => {
   menu.classList.contains('is-open') ? closeMenu() : openMenu();      
 })
 
-const swiper = new Swiper('.swiper', {
+const swiperSteps = new Swiper(".steps-slider", {
+  speed: 400,
+  slidesPerView: 1,
+    // Responsive breakpoints
+    breakpoints: {
+      // when window width is >= 320px
+      776: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 768px
+      868: {
+        slidesPerView: 3,
+      },
+      // when window width is >= 1024px
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+    navigation: {
+      nextEl: '.steps-button-next',
+      prevEl: '.steps-button-prev',
+    },
+})
+
+
+const swiper = new Swiper('.header-features-slider', {
   speed: 400,
   slidesPerView: 1,
     // Responsive breakpoints
