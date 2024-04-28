@@ -69,6 +69,7 @@ body {
 .header {
   padding-top: 5.875rem;
   width: 100%;
+  min-width: 52rem;
 }
 
 .header-image {
