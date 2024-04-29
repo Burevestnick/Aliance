@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 @font-face {
@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 90rem;
   margin: auto;
   z-index: 1;
 }
@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   color: white;
-  height: 94px;
+  height: 5.875rem;
   position: fixed;
   left: 0;
   top: 0;
@@ -46,15 +46,15 @@ body {
 }
 
 .navbar-logo-svg {
-  width: 144px;
-  height: 44px;
+  width: 9rem;
+  height: 2.75rem;
 }
 
 .navbar-light {
   background-color: #fff;
   color: rgb(41, 45, 51);
   border-right: none;
-  height: 94px;
+  height: 5.875rem;
 }
 
 .navbar-light .header-logo-path {
@@ -66,9 +66,9 @@ body {
 }
 
 .header {
-  padding-top: 94px;
+  padding-top: 5.875rem;
   width: 100%;
-  min-width: 832px;
+  min-width: 52rem;
 }
 
 .header-image {
@@ -91,7 +91,7 @@ body {
 }
 
 .header-logo {
-  padding: 0 50px;
+  padding: 0 3.125rem;
   border-right: .0625rem solid rgba(235, 235, 240, 0.2);
   height: 100%;
   display: flex;
@@ -105,13 +105,13 @@ body {
   flex-basis: 100%;
   list-style: none;
   padding: 0;
-  padding-left: 50px;
+  padding-left: 3.125rem;
   margin: 0;
 }
 
 .header-nav-link {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: inherit;
   height: 100%;
@@ -146,8 +146,8 @@ body {
 }
 
 .phone-icon {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
 }
 
 .header-nav-item {
@@ -162,18 +162,18 @@ body {
 
 .header-phone-link {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: inherit;
-  margin-right: 50px;
+  margin-right: 3.125rem;
 }
 
 .button {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 160%;
   color: white;
   background: rgb(58, 113, 209);
-  padding: 25px 60px;
+  padding: 1.5625rem 3.75rem;
   border: none;
   display: inline-block;
   cursor: pointer;
@@ -182,12 +182,12 @@ body {
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
-  padding: 25px 50px;
+  padding: 1.5625rem 3.125rem;
 }
 
 .header-button {
   height: 100%;
-  padding: 26px 60px;
+  padding: 1.625rem 3.75rem;
 }
 
 .navbar-button .navbar-button-icon {
@@ -196,35 +196,35 @@ body {
 
 .separator {
   background: rgb(92, 142, 230);
-  width: 150px;
-  height: 2px;
+  width: 9.375rem;
+  height: .125rem;
 }
 
 .header-content {
-  padding-top: 150px;
+  padding-top: 9.375rem;
   position: relative;
   z-index: 1;
   color: #fff;
 }
 
 .header-title {
-  max-width: 1080px;
+  max-width: 67.5rem;
   font-family: "Bebas Neue";
-  font-size: 80px;
+  font-size: 5rem;
   line-height: 120%;
-  margin: 30px 0;
+  margin: 1.875rem 0;
   letter-spacing: .05rem;
   word-spacing: -1, .375rem;
 }
 
 .header-text {
-  max-width: 720px;
+  max-width: 45rem;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0%;
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .slider-buttons {
@@ -244,59 +244,59 @@ body {
 
 .header-features {
   display: flex;
-  min-height: 168px;
+  min-height: 10.5rem;
   color: white;
   list-style: none;
-  margin-top: 100px;
+  margin-top: 6.25rem;
   padding: 0;
   position: relative;
 }
 
 .header-features-item {
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   height: 100%;
-  width: 288px;
+  width: 18rem;
   border: .0625rem solid rgba(235, 235, 240, 0.2);
   height: auto;
 }
 
 .header-features-text {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0%;
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: .625rem;
 }
 
 .section {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 9.375rem;
+  margin-bottom: 9.375rem;
 }
 
 .section-title {
   font-family: "Bebas Neue";
   color: rgb(41, 45, 51);
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 120%;
-  margin-top: 34px;
+  margin-top: 2.125rem;
 }
 
 .steps {
   display: flex;
   list-style: none;
   padding: 0;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .steps-item {
-  max-width: 330px;
+  max-width: 20.625rem;
 }
 
 .steps-num {
   color: rgb(92, 142, 230);
   font-family: "Bebas Neue";
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 120%;
   display: flex;
   align-items: center;
@@ -308,25 +308,25 @@ body {
   background: rgb(235, 235, 240);
   width: 100%;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .steps-title {
   color: rgb(41, 45, 51);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   line-height: 160%;
-  margin-top: 35px;
-  margin-bottom: 10px;
+  margin-top: 2.1875rem;
+  margin-bottom: .625rem;
 }
 
 .steps-text {
   color: rgb(130, 138, 153);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: .625rem;
+  margin-bottom: 1.25rem;
 }
 
 .steps-link {
@@ -334,19 +334,19 @@ body {
   align-items: center;
   text-decoration: none;
   color: rgb(92, 142, 230);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 160%;
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .steps-link::before {
   content: "";
   height: .0625rem;
   background: rgb(92, 142, 230);
-  margin-right: 20px;
-  width: 40px;
-  margin-right: 16px;
+  margin-right: 1.25rem;
+  width: 2.5rem;
+  margin-right: 1rem;
   transition: width 0.12s;
 }
 
@@ -356,7 +356,7 @@ body {
 
 .steps-buttons {
   display: none;
-  height: 40px;
+  height: 2.5rem;
   justify-content: flex-end;
 }
 
@@ -364,7 +364,7 @@ body {
 .steps-button-next {
   background: rgb(92, 142, 230);
   height: 100%;
-  width: 60px;
+  width: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -395,7 +395,7 @@ body {
 
 .card-trademark {
   flex-basis: 50%;
-  border: solid .0625rem rgb(235, 235, 240);
+  border: solid 1px rgb(235, 235, 240);
   position: relative;
   display: flex;
   align-items: center;
@@ -414,7 +414,7 @@ body {
 
 .card-trademark-text {
   color: rgb(130, 138, 153);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -431,7 +431,7 @@ body {
 
 .card-title {
   color: rgb(41, 45, 51);
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
   line-height: 140%;
   margin-top: 0;
@@ -442,14 +442,14 @@ body {
 
 .card-text {
   color: rgb(130, 138, 153);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
   margin-bottom: 394px;
 }
 
 .card-content {
-  padding: 40px 50px;
+  padding: 2.5rem 3.125rem;
 }
 
 .card-image {
@@ -468,7 +468,7 @@ body {
     background-position: center;
   }
   .header-phone-link {
-    margin-right: 34px;
+    margin-right: 2.125rem;
   }
 }
 
@@ -477,31 +477,31 @@ body {
     font-size: .8125rem;
   }
   .header-nav {
-    padding-left: 32px;
+    padding-left: 2rem;
   }
   .navbar-logo-svg {
-    max-width: 112px;
+    max-width: 7rem;
   }
   .header-nav-item:not(:last-child) {
-    margin-right: 16px;
+    margin-right: 1rem;
   }
   .header-phone-link {
-    margin-right: 24px;
+    margin-right: 1.5rem;
   }
 }
 @media (max-width: 1215px) {
   .container {
-    max-width: 1120px;
+    max-width: 70rem;
   }
   .header-phone {
     display: none;
   }
   .navbar {
-    height: 80px;
+    height: 5rem;
   }
   .navbar-button {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .slider-buttons {
     display: flex;
@@ -522,7 +522,7 @@ body {
     font-size: .75rem;
   }
   .container {
-    max-width: 960px;
+    max-width: 60rem;
   }
   .header-nav {
     display: none;
@@ -540,10 +540,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 32px;
-    padding-right: 40px;
-    padding-left: 40px;
-    border-right: .0625rem solid rgba(235, 235, 240, 0.2);
+    padding: 2.1rem 1.6rem;
+    border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .mobile-menu-line {
     height: .0625rem;
@@ -562,8 +560,8 @@ body {
     display: block;
   }
   .navbar-button {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .mobile-menu {
     display: block;
@@ -577,10 +575,10 @@ body {
     overflow-y: auto;
     z-index: 2;
     background-color: #fff;
-    padding-top: 80px;
+    padding-top: 5rem;
     display: none;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .mobile-menu.is-open {
     display: block;
@@ -590,59 +588,59 @@ body {
     padding: 0;
   }
   .mobile-menu-nav-item {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
   .mobile-menu-link {
     text-decoration: none;
     font-weight: 700;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 160%;
     color: #292d33;
   }
   .mobile-submenu-link {
     text-decoration: none;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 160%;
     color: #828a99;
   }
   .mobile-submenu {
     list-style-type: none;
     padding: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .mobile-phone {
     display: block;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 160%;
     color: #292d33;
     text-decoration: underline;
     border-top: .0625rem solid #ebebf0;
-    padding-top: 32px;
-    margin-bottom: 24px;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
   }
   .mobile-info-address-container {
     display: flex;
     align-items: center;
-    gap: 16px;
-    margin-top: 24px;
-    margin-bottom: 16px;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   .mobile-info-email-container,
   .mobile-info-address-container,
   .mobile-info-social-container {
     display: flex;
     align-items: center;
-    gap: 16px;
-    margin-top: 24px;
-    margin-bottom: 16px;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
   }
   .mobile-info-address,
   .mobile-info-email {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: .875rem;
     line-height: 160%;
     color: #292d33;
     text-decoration: none;
@@ -660,13 +658,13 @@ body {
 }
 @media (max-width: 815px) {
   .container {
-    max-width: 640px;
+    max-width: 40rem;
   }
   .header-title {
-    font-size: 64px;
+    font-size: 4rem;
   }
   .header-content {
-    padding-top: 48px;
+    padding-top: 3rem;
   }
   .card {
     flex-basis: 100%;
@@ -677,9 +675,9 @@ body {
     max-width: 90%;
   }
   .header-title {
-    font-size: 32px;
+    font-size: 2rem;
   }
   .header-content {
-    padding-top: 16px;
+    padding-top: 1rem;
   }
 }
