@@ -468,13 +468,94 @@ body {
 }
 
 .trademark-card-text {
-  margin-top: .625rem;
+  margin-top: 0.625rem;
   color: rgb(130, 138, 153);
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
   letter-spacing: 0%;
   grid-area: text;
+}
+
+.founder {
+  position: relative;
+  min-height: 41.25rem;
+}
+
+.founder-photo {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+}
+
+.founder-content {
+  max-width: 45rem;
+}
+
+.founder-text {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.founder-content-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clients-wrapper {
+  display: flex;
+  gap: 3.125rem;
+}
+
+.clients-content {
+  flex-basis: 50%;
+}
+
+.clients-list {
+  list-style: none;
+  padding: 0;
+  columns: 2 auto;
+}
+
+.clients-list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-bottom: .625rem;
+  color: rgb(41, 45, 51);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.clients-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 10;
+}
+
+.clients-logo-item {
+  flex-basis: 33%;
+  border: 1px solid rgb(235, 235, 240);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.clients-logo {
+ max-width: 100%;
+ filter: grayscale(1);
+ transition: filter 0.3s;
+}
+
+.clients-logo:hover {
+ filter: grayscale(0);
 }
 
 @media (max-width: 1570px) {
@@ -532,6 +613,13 @@ body {
   .trademark-card {
     grid-template-columns: auto auto;
   }
+  .founder-content {
+    max-width: 35rem;
+  }
+  .clients-content {
+    flex-basis: 60%;
+  }
+  
 }
 @media (max-width: 1005px) {
   html {
@@ -682,6 +770,10 @@ body {
   .trademark-cards {
     flex-direction: column;
   }
+  .clients-wrapper {
+    flex-direction: column;
+  }
+  
 }
 @media (max-width: 815px) {
   .container {
@@ -696,6 +788,11 @@ body {
   .card {
     flex-basis: 100%;
   }
+  .founder-photo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
 }
 @media (max-width: 590px) {
   .container {
@@ -705,8 +802,14 @@ body {
     font-size: 3rem;
   }
   .trademark-card {
-    grid-template-areas: 
-    "logo title"
-    "text text";
+    grid-template-areas:
+      "logo title"
+      "text text";
+  }
+  .clients-list {
+    columns: 1;
+  }
+  .clients-logo-item {
+    flex-basis: 50%;
   }
 }
