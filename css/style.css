@@ -35,7 +35,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  border-bottom: .0625rem solid rgba(235, 235, 240, 0.2);
+  border-bottom: 0.0625rem solid rgba(235, 235, 240, 0.2);
   z-index: 2;
   width: 100%;
   transition: background-color 0.2s;
@@ -68,7 +68,7 @@ body {
 .header {
   padding-top: 5.875rem;
   width: 100%;
-  min-width: 52rem;
+  min-width: 9rem;
 }
 
 .header-image {
@@ -92,7 +92,7 @@ body {
 
 .header-logo {
   padding: 0 3.125rem;
-  border-right: .0625rem solid rgba(235, 235, 240, 0.2);
+  border-right: 0.0625rem solid rgba(235, 235, 240, 0.2);
   height: 100%;
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@ body {
   content: "";
   bottom: -0.0625rem;
   width: 0rem;
-  height: .125rem;
+  height: 0.125rem;
   position: absolute;
   background-color: rgb(92, 142, 230);
   transition: width 0.2s;
@@ -197,7 +197,7 @@ body {
 .separator {
   background: rgb(92, 142, 230);
   width: 9.375rem;
-  height: .125rem;
+  height: 0.125rem;
 }
 
 .header-content {
@@ -213,8 +213,8 @@ body {
   font-size: 5rem;
   line-height: 120%;
   margin: 1.875rem 0;
-  letter-spacing: .05rem;
-  word-spacing: -1, .375rem;
+  letter-spacing: 0.05rem;
+  word-spacing: -1, 0.375rem;
 }
 
 .header-text {
@@ -236,7 +236,7 @@ body {
 .slider-button-next {
   height: 100%;
   flex-basis: 50%;
-  border: .0625rem solid rgba(235, 235, 240, 0.2);
+  border: 0.0625rem solid rgba(235, 235, 240, 0.2);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -256,7 +256,7 @@ body {
   padding: 1.875rem 3.125rem;
   height: 100%;
   width: 18rem;
-  border: .0625rem solid rgba(235, 235, 240, 0.2);
+  border: 0.0625rem solid rgba(235, 235, 240, 0.2);
   height: auto;
 }
 
@@ -266,7 +266,7 @@ body {
   line-height: 160%;
   letter-spacing: 0%;
   margin-bottom: 0;
-  margin-top: .625rem;
+  margin-top: 0.625rem;
 }
 
 .section {
@@ -304,7 +304,7 @@ body {
 
 .steps-num:after {
   content: "";
-  height: .0625rem;
+  height: 0.0625rem;
   background: rgb(235, 235, 240);
   width: 100%;
   display: inline-block;
@@ -317,7 +317,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   margin-top: 2.1875rem;
-  margin-bottom: .625rem;
+  margin-bottom: 0.625rem;
 }
 
 .steps-text {
@@ -325,7 +325,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
-  margin-top: .625rem;
+  margin-top: 0.625rem;
   margin-bottom: 1.25rem;
 }
 
@@ -342,7 +342,7 @@ body {
 
 .steps-link::before {
   content: "";
-  height: .0625rem;
+  height: 0.0625rem;
   background: rgb(92, 142, 230);
   margin-right: 1.25rem;
   width: 2.5rem;
@@ -378,11 +378,10 @@ body {
 
 .card {
   flex-basis: 33%;
-  border: solid .0625rem rgb(235, 235, 240);
+  border: solid 0.0625rem rgb(235, 235, 240);
   position: relative;
   text-decoration: none;
   transition: border 0.2s;
-  display: flex;
 }
 
 .card:hover .card-title {
@@ -390,44 +389,8 @@ body {
 }
 
 .card:hover {
-  border-color:rgb(92, 142, 230);
+  border-color: rgb(92, 142, 230);
 }
-
-.card-trademark {
-  flex-basis: 50%;
-  border: solid 1px rgb(235, 235, 240);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  transition: border 0.2s;
-}
-
-.card-trademark:hover .card-title {
-  color: rgb(92, 142, 230);
-}
-
-.card-trademark:hover {
-  border-color:rgb(92, 142, 230);
-}
-
-.card-trademark-text {
-  color: rgb(130, 138, 153);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.trademark-logos-container {
-  margin-left: 2.375rem;
-}
-
-.trademark-logos {
-  width: 8.75rem;
-  height: 10rem;
-}
-
 
 .card-title {
   color: rgb(41, 45, 51);
@@ -437,7 +400,6 @@ body {
   margin-top: 0;
   margin-bottom: 10px;
   transition: color 0.2s;
-
 }
 
 .card-text {
@@ -460,9 +422,64 @@ body {
   z-index: 0;
 }
 
+.trademark-cards {
+  display: flex;
+}
+.trademark-card {
+  flex-basis: 50%;
+  border: solid 0.0625rem rgb(235, 235, 240);
+  text-decoration: none;
+  transition: border 0.2s;
+  padding: 3.125rem;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  grid-template-rows: auto 2fr;
+  grid-column-gap: 3.125rem;
+  grid-template-areas: "logo title title" "logo text text";
+}
+
+.trademark-card:hover {
+  border-color: rgb(92, 142, 230);
+}
+
+.trademark-card:hover .trademark-card-logo {
+  fill: rgb(92, 142, 230);
+}
+
+.trademark-card:hover .trademark-card-title {
+  color: rgb(92, 142, 230);
+}
+
+.trademark-card-logo {
+  width: 100%;
+  fill: rgb(130, 138, 153);
+  transition: fill 0.2s;
+  grid-area: logo;
+}
+
+.trademark-card-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: #292d33;
+  margin: 0;
+  transition: color 0.2s;
+  grid-area: title;
+}
+
+.trademark-card-text {
+  margin-top: .625rem;
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  grid-area: text;
+}
+
 @media (max-width: 1570px) {
   html {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
   .header-image {
     background-position: center;
@@ -474,7 +491,7 @@ body {
 
 @media (max-width: 1380px) {
   html {
-    font-size: .8125rem;
+    font-size: 0.8125rem;
   }
   .header-nav {
     padding-left: 2rem;
@@ -497,7 +514,7 @@ body {
     display: none;
   }
   .navbar {
-    height: 5rem;
+    height: 5.8rem;
   }
   .navbar-button {
     padding-left: 1rem;
@@ -512,14 +529,13 @@ body {
   .card {
     flex-basis: 50%;
   }
-  .card-trademark {
-    flex-basis: 100%;
+  .trademark-card {
+    grid-template-columns: auto auto;
   }
-
 }
 @media (max-width: 1005px) {
   html {
-    font-size: .75rem;
+    font-size: 0.75rem;
   }
   .container {
     max-width: 60rem;
@@ -530,6 +546,14 @@ body {
   .header-logo {
     flex-grow: 1;
     justify-content: center;
+    border: none;
+  }
+  .navbar-logo-svg {
+    max-width: 10rem;
+  }
+  .navbar-button {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
   }
   .navbar-light .mobile-menu-line {
     background-color: #333;
@@ -540,11 +564,11 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    padding: 2.1rem 1.6rem;
+    padding: 2.52rem 1.6rem;
     border-right: 1px solid rgba(235, 235, 240, 0.2);
   }
   .mobile-menu-line {
-    height: .0625rem;
+    height: 0.0625rem;
     width: 100%;
     background-color: #fff;
     transition: transform 0.35s;
@@ -593,13 +617,13 @@ body {
   .mobile-menu-link {
     text-decoration: none;
     font-weight: 700;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 160%;
     color: #292d33;
   }
   .mobile-submenu-link {
     text-decoration: none;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 160%;
     color: #828a99;
   }
@@ -616,7 +640,7 @@ body {
     line-height: 160%;
     color: #292d33;
     text-decoration: underline;
-    border-top: .0625rem solid #ebebf0;
+    border-top: 0.0625rem solid #ebebf0;
     padding-top: 2rem;
     margin-bottom: 1.5rem;
   }
@@ -640,7 +664,7 @@ body {
   .mobile-info-email {
     font-style: normal;
     font-weight: 400;
-    font-size: .875rem;
+    font-size: 0.875rem;
     line-height: 160%;
     color: #292d33;
     text-decoration: none;
@@ -650,10 +674,13 @@ body {
     display: none;
   }
   .close-menu .mobile-menu-line:nth-child(1) {
-    transform: rotate(45deg) translateY(.4375rem);
+    transform: rotate(45deg) translateY(0.4375rem);
   }
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-0.4375rem);
+  }
+  .trademark-cards {
+    flex-direction: column;
   }
 }
 @media (max-width: 815px) {
@@ -675,9 +702,11 @@ body {
     max-width: 90%;
   }
   .header-title {
-    font-size: 2rem;
+    font-size: 3rem;
   }
-  .header-content {
-    padding-top: 1rem;
+  .trademark-card {
+    grid-template-areas: 
+    "logo title"
+    "text text";
   }
 }
