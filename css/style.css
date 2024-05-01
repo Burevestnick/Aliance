@@ -177,6 +177,10 @@ body {
   border: none;
   display: inline-block;
   cursor: pointer;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: rgb(92, 142, 230);
 }
 
 .navbar-button {
@@ -543,6 +547,12 @@ body {
   flex-shrink: 10;
 }
 
+.clients-logo {
+  max-width: 100%;
+  filter: grayscale(1);
+  transition: filter 0.3s;
+}
+
 .clients-logo-item {
   flex-basis: 33%;
   border: 1px solid rgb(235, 235, 240);
@@ -550,15 +560,14 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  transition: filter 0.3s, border-color 0.3s;
 }
 
-.clients-logo {
-  max-width: 100%;
-  filter: grayscale(1);
-  transition: filter 0.3s;
+.clients-logo-item:hover {
+  border-color: rgb(92, 142, 230);
 }
 
-.clients-logo:hover {
+.clients-logo-item:hover .clients-logo{
   filter: grayscale(0);
 }
 
