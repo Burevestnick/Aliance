@@ -68,7 +68,7 @@ body {
 .header {
   padding-top: 5.875rem;
   width: 100%;
-  min-width: 9rem;
+  min-width: 10rem;
 }
 
 .header-image {
@@ -567,7 +567,7 @@ body {
   border-color: rgb(92, 142, 230);
 }
 
-.clients-logo-item:hover .clients-logo{
+.clients-logo-item:hover .clients-logo {
   filter: grayscale(0);
 }
 
@@ -630,7 +630,6 @@ body {
 .bg-gray {
   background: rgb(240, 242, 245);
   position: relative;
-
 }
 
 .section-cta {
@@ -740,10 +739,150 @@ body {
 .notify-text {
   margin: 0;
   color: rgb(130, 138, 153);
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 160%;
   max-width: 23.75rem;
+}
+
+.footer-top {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.footer-logo {
+  width: 12.5rem;
+  height: 3.75rem;
+}
+
+.footer-phone {
+  color: rgb(41, 45, 51);
+  font-size: 1.625rem;
+  font-weight: 600;
+  line-height: 160%;
+  text-decoration-line: underline;
+}
+
+.footer-social-link {
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-info-email-container,
+.footer-info-address-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-style: normal;
+  color: rgb(41, 45, 51);
+  gap: 0.625rem;
+}
+
+.footer-info-address,
+.footer-info-email {
+  font-style: inherit;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.footer-seporator {
+  border: 1px solid rgb(235, 235, 240);
+}
+
+.footer-bottom {
+  display: flex;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.footer-menu-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: none;
+}
+
+.footer-menu-column-2 {
+  columns: 2;
+}
+
+.footer-menu-title {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+  font-style: normal;
+  color: rgb(41, 45, 51);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+}
+
+.footer-menu-link {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-decoration: none;
+  margin-bottom: 0.9375rem;
+  display: block;
+}
+
+.footer-menu-link-bold {
+  color: rgb(41, 45, 51);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+  margin-bottom: 1.875rem;
+}
+
+.footer-menu-wrapper {
+  margin-right: 5rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.375rem;
+  color: rgb(130, 138, 153);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.footer-policy {
+  color: rgb(130, 138, 153);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.made-in {
+  color: rgb(130, 138, 153);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.author-icon {
+  width: 3.75rem;
+  height: .625rem;
+  margin: 0;
 }
 
 @media (max-width: 1570px) {
@@ -824,6 +963,9 @@ body {
   .cta-form-wrapper {
     display: flex;
     justify-content: flex-end;
+  }
+  .footer-phone {
+    font-size: 22px;
   }
 }
 @media (max-width: 1005px) {
@@ -988,6 +1130,9 @@ body {
   .cta-form-title {
     font-size: 2.25rem;
   }
+  .footer-phone {
+    font-size: 20px;
+  }
 }
 @media (max-width: 815px) {
   .container {
@@ -1011,10 +1156,14 @@ body {
     flex-direction: column;
   }
   .input-group-label {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
   .cta-form-text {
-    font-size: .875rem;
+    font-size: 0.875rem;
+  }
+  .footer-top {
+    display: inline-block;
+    justify-content: space-between;
   }
 }
 @media (max-width: 590px) {
@@ -1040,5 +1189,26 @@ body {
   }
   .cta-form-button {
     width: 100%;
+  }
+  .footer-menu-column-2 {
+    columns: 1;
+  }
+  .footer-bottom {
+    display: block;
+  }
+  .footer-wrapper {
+    display: block;
+  }
+  .footer-legal {
+    display: block;
+    justify-content: center;
+    gap: 0;
+    left: 0;
+  }
+  .copyright {
+    margin: 0;
+  }
+  .footer-menu-wrapper:not(:last-child) {
+    padding-bottom: 2.5rem;
   }
 }
