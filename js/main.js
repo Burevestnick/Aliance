@@ -87,3 +87,39 @@ const swiper = new Swiper('.header-features-slider', {
     prevEl: '.slider-button-prev',
   },
 });
+
+
+const swiperBlog = new Swiper(".blog-slider", {
+  speed: 400,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  navigation: {
+    prevEl: '.blog-button-prev',
+    nextEl: '.blog-button-next',
+  },
+      // Responsive breakpoints
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        590: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 320px
+        776: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        868: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 1200px
+        1200: {
+          slidesPerView: 2,
+        },
+      }
+})
