@@ -886,6 +886,10 @@ body {
   margin: 0;
 }
 
+.footer-email-address-wrapper {
+  display: flex;
+}
+
 @media (max-width: 1570px) {
   html {
     font-size: 0.875rem;
@@ -1168,7 +1172,9 @@ body {
     flex-direction: column;
     gap: 21px;
     padding: 20px 0;
-
+  }
+  .footer-email-address-wrapper {
+    display: block;
   }
 }
 @media (max-width: 590px) {
