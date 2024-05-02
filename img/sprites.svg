@@ -137,6 +137,9 @@
 	<path id="Vector" d="M5.93 6.53C7.03 6.27 8.15 5.31 8.15 3.52C8.15 1.63 6.86 0.25 4.74 0.25L0 0.25L0 2.15L2.16 2.15L2.32 2.15L4.42 2.15C5.29 2.15 5.95 2.66 5.95 3.52C5.95 4.37 5.29 4.89 4.42 4.89L2.32 4.89L2.16 4.89L0 4.89L0 10.39L2.16 10.39L2.16 6.79L3.74 6.79L5.73 10.4L8.21 10.4L5.93 6.53Z" fill="#828A99" fill-opacity="1.000000" fill-rule="nonzero"/>
 </symbol>
 
+<symbol viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="close">
+	<path id="Vector" d="M3.86 3.15L3.16 3.86L11.29 11.99L3.16 20.13L3.86 20.83L11.99 12.7L20.13 20.83L20.83 20.13L12.7 11.99L20.83 3.86L20.13 3.15L11.99 11.29L3.86 3.15Z" fill="#828A99" fill-opacity="1.000000" fill-rule="nonzero"/>
+</symbol>
 
 
 

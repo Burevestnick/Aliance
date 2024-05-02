@@ -213,7 +213,7 @@ body {
 
 .header-title {
   max-width: 67.5rem;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 5rem;
   line-height: 120%;
   margin: 1.875rem 0;
@@ -279,7 +279,7 @@ body {
 }
 
 .section-title {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   color: rgb(41, 45, 51);
   font-size: 3.75rem;
   line-height: 120%;
@@ -299,7 +299,7 @@ body {
 
 .steps-num {
   color: rgb(92, 142, 230);
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 3rem;
   line-height: 120%;
   display: flex;
@@ -671,6 +671,11 @@ body {
   gap: 1.875rem;
 }
 
+.input-group-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
 .input-group {
   position: relative;
   height: 4.125rem;
@@ -686,7 +691,7 @@ body {
   bottom: 0;
   padding: 1.25rem 1.875rem;
   border: 1px solid rgb(228, 228, 235);
-  background-color: transparent;
+  background-color: inherit;
 }
 
 .input-group-label {
@@ -859,7 +864,7 @@ body {
   gap: 4.375rem;
   color: rgb(130, 138, 153);
   font-family: Noto Sans;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -867,7 +872,7 @@ body {
 .footer-policy {
   color: rgb(130, 138, 153);
   font-family: Noto Sans;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 160%;
 }
@@ -875,20 +880,101 @@ body {
 .made-in {
   color: rgb(130, 138, 153);
   font-family: Noto Sans;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 160%;
 }
 
 .author-icon {
   width: 3.75rem;
-  height: .625rem;
+  height: 0.625rem;
   margin: 0;
 }
 
 .footer-email-address-wrapper {
   display: flex;
 }
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 45, 51, 50%);
+  display: flex;
+}
+
+.modal.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+}
+
+.modal.is-open .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.modal-dialog {
+  margin: auto;
+  max-width: 28.75rem;
+  padding: 2.5rem 3.125rem;
+  background-color: #fff;
+  position: relative;
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.modal-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  color: rgb(41, 45, 51);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.modal-close {
+  display: flex;
+  position: absolute;
+  top: 2.5rem;
+  right: 3.125rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(235, 235, 240);
+}
+
+.modal-text {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 1.875rem;
+}
+.modal-input-group {
+  background-color: #fff;
+}
+
+.modal-form-footer {
+  margin-top: 1.875rem;
+}
+
+.modal-form-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 
 @media (max-width: 1570px) {
   html {
