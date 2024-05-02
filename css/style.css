@@ -772,6 +772,7 @@ body {
 
 .footer-social {
   display: flex;
+  gap: 1.3125rem;
 }
 
 .footer-info-email-container,
