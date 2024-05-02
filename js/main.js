@@ -41,6 +41,10 @@ const swiperSteps = new Swiper(".steps-slider", {
     // Responsive breakpoints
     breakpoints: {
       // when window width is >= 320px
+      300: {
+        slidesPerView: 2,
+      },
+      // when window width is >= 320px
       776: {
         slidesPerView: 2,
       },

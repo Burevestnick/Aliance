@@ -782,7 +782,7 @@ body {
   text-decoration: none;
   font-style: normal;
   color: rgb(41, 45, 51);
-  gap: 0.625rem;
+  padding-right: 1.875rem;
 }
 
 .footer-info-address,
@@ -1163,8 +1163,12 @@ body {
     font-size: 0.875rem;
   }
   .footer-top {
-    display: inline-block;
-    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 21px;
+    padding: 20px 0;
+
   }
 }
 @media (max-width: 590px) {
@@ -1211,5 +1215,11 @@ body {
   }
   .footer-menu-wrapper:not(:last-child) {
     padding-bottom: 2.5rem;
+  }
+
+  .bg-gray {
+    padding-top: 30px;
+    margin: 0px;
+    padding-bottom: 30px;
   }
 }
