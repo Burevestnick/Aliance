@@ -38,9 +38,12 @@ body {
   border-bottom: 0.0625rem solid rgba(235, 235, 240, 0.2);
   z-index: 2;
   width: 100%;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, height 0.35s;
 }
 
+.logo-darkk {
+  display: none;
+}
 .logo-dark {
   display: none;
 }
@@ -54,7 +57,17 @@ body {
   background-color: #fff;
   color: rgb(41, 45, 51);
   border-right: none;
-  height: 5.875rem;
+}
+
+.navbar-light .logo-light {
+  display: none;
+}
+.navbar-light .logo-darkk {
+  display: block;
+}
+
+.navbar-scroll {
+  height: 4.5rem;
 }
 
 .navbar-light .header-logo-path {
@@ -230,6 +243,51 @@ body {
   letter-spacing: 0%;
   margin-bottom: 3.125rem;
 }
+
+.topper-page-clean, .topper-page-img {
+  margin-top: 5.875rem;
+  width: 100%;
+  height: 16.875rem;
+  padding-left: 15rem;
+  position: absolute;
+}
+
+.topper-page-clean-wrapper {
+  padding: 3.125rem 0;
+  position: relative;
+}
+
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.bread-crumbs-text:not(:last-child) {
+  color: rgb(130, 138, 153);
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.bread-crumbs-text:last-child {
+  color: rgb(41, 45, 51);
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.bread-crumbs-seporator {
+  background: rgb(130, 138, 153);
+  width: .875rem;
+  height: .0813rem;
+  margin: 0 .625rem;
+}
+
+
 
 .slider-buttons {
   display: none;
@@ -907,7 +965,6 @@ body {
   background-color: rgba(40, 45, 51, 50%);
   display: flex;
 }
-
 
 .modal.is-open {
   transform: translateX(0);
