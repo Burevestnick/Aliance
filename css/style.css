@@ -908,6 +908,15 @@ body {
   display: flex;
 }
 
+.modal-close-area {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 3;
+  background-color: transparent;
+}
+
 .modal.is-open {
   transform: translateX(0);
   visibility: visible;
@@ -929,6 +938,7 @@ body {
   transform: translateY(-10%);
   opacity: 0;
   transition: transform 0.3s, opacity 0.3s;
+  z-index: 5;
 }
 
 .modal-title {
@@ -974,7 +984,6 @@ body {
   width: 100%;
   margin-bottom: 1.5rem;
 }
-
 
 @media (max-width: 1570px) {
   html {
@@ -1313,5 +1322,26 @@ body {
     padding-top: 30px;
     margin: 0px;
     padding-bottom: 30px;
+  }
+  .modal-dialog {
+    margin: auto;
+    max-width: 21.5625rem;
+    padding: 1.875rem;
+    background-color: #fff;
+    position: relative;
+    transform: translateY(-10%);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .modal-title {
+    font-size: 2.5rem;
+  }
+  .modal-close {
+    display: flex;
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

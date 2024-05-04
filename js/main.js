@@ -131,6 +131,7 @@ const swiperBlog = new Swiper(".blog-slider", {
 const modal = document.querySelector('.modal'); 
 const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 const modalClose = document.querySelector(".modal-close");
+const modalCloseArea = document.querySelector(".modal-close-area");
 console.log(modalToggle);
 modalToggle.forEach((element) =>{
   element.addEventListener('click', (event) => {
@@ -141,4 +142,15 @@ modalToggle.forEach((element) =>{
 modalClose.addEventListener('click', (event) => {
   event.preventDefault();
   modal.classList.remove("is-open");
+})
+
+modalCloseArea.addEventListener('click', (event) => {
+  event.preventDefault();
+  modal.classList.remove("is-open");
+})
+
+document.addEventListener("keydown", e => {
+  if (e.key.toString() === "Escape") {
+    modal.classList.remove("is-open");
+  }
 })
