@@ -2,7 +2,7 @@
       <div class="bg-gray section-cta">
         <img src="img/AgSpray.png" alt="call to action" class="cta-image" />
         <div class="cta-form-wrapper container">
-          <form action="#" class="cta-form">
+          <form action="handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
             <p class="cta-form-text">
               Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время
@@ -15,6 +15,7 @@
                   id="user-name"
                   type="text"
                   class="input"
+                  name = "user-name"
                   placeholder=" "
                 />
                 <label class="input-group-label" for="user-name">Имя</label>
@@ -24,6 +25,7 @@
                   id="user-phone"
                   type="tel"
                   class="input"
+                  name = "user-phone"
                   placeholder=" "
                 />
                 <label class="input-group-label" for="user-phone"
@@ -58,7 +60,7 @@
           <svg class="navbar-logo-svg footer-logo" width="160" height="50">
             <use href="img/sprites.svg#logo-dark"></use>
           </svg>
-          <a href="tel:+74996861014" class="footer-phone">+7 (499) 686-10-14</a>
+          <a href="tel:+79996861014" class="footer-phone">+7 (999) 686-10-14</a>
           <div class="footer-email-address-wrapper">
             <div class="footer-info-address-container">
               <svg class="phone-icon">
@@ -169,7 +171,7 @@
         <div class="footer-wrapper">
           <div class="footer-legal">
             <p class="copyright">
-              &copy; <?php echo date('d.m.Y')?> «Aliance Production». Все права защищены.
+              &copy; <?php echo date('d.m.Y');?> «Aliance Production». Все права защищены.
             </p>
             <a href="#" class="footer-policy">Политики конфиденциальности</a>
           </div>
