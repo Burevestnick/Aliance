@@ -1,3 +1,4 @@
+
 const navbar = document.querySelector(".navbar");
 const logoLight = document.querySelector(".logo-light");
 const logoDark = document.querySelector(".logo-dark");
@@ -159,4 +160,87 @@ document.addEventListener("keyup", (event) => {
     event.preventDefault();
     modal.classList.toggle("is-open");
   }
+});
+
+const thanks = document.querySelector('.thanks-modal'); 
+const thanksDialog = document.querySelector(".thanks-modal-dialog");
+
+document.addEventListener("click", (event) =>{
+  if (
+    event.target.dataset.toggle == "thanks-modal" ||
+    event.target.parentNode.dataset.toggle == "thanks-modal" ||
+    (!event.composedPath().includes(thanksDialog) && 
+    thanks.classList.contains("is-open"))
+  ){
+    event.preventDefault();
+    thanks.classList.toggle("is-open");
+  }
+});
+document.addEventListener("keyup", (event) => {
+  if (
+    event.key == "Escape" &&
+    thanks.classList.contains("is-open")
+  ) {
+    event.preventDefault();
+    thanks.classList.toggle("is-open");
+  }
+});
+
+
+const inputs = document.getElementsByName('user-phone');
+console.log(inputs);
+inputs.forEach((input) => {
+  IMask(
+    input, 
+    {
+      mask: '+{7} (000) 000-00-00',
+      lazy: false,
+    }
+  );
+});
+
+const forms = document.querySelectorAll("form");
+console.log(forms);
+forms.forEach((form) => {
+  const validation = new JustValidate(form, {
+    errorFieldCssClass: 'is-invalid',
+  });
+  validation
+  .addField("[name=user-name]", [
+    {
+      rule: "required",
+      errorMessage: "Укажите имя",
+    },
+    {
+      rule: 'maxLength',
+      value: 50,
+      errorMessage: "Максимум 50 символов",
+    },
+  ])
+  .addField("[name=user-phone]", [
+    {
+      rule: "required",
+      errorMessage: "Укажите телефон",
+    },
+  ])
+  .onSuccess((event) => {
+    const thisForm = event.target;
+    const formData = new FormData(thisForm);
+    const ajaxSend = (formData) => {
+      fetch(thisForm.getAttribute("action"), {
+        method: thisForm.getAttribute("method"),
+        body: formData,
+      }).then((response) => {
+        if (response.ok) {
+          thisForm.reset();
+          console.log("form sended");
+          modal.classList.toggle("is-open");
+          thanks.classList.toggle("is-open");
+        } else {
+          alert(response.statusText);
+        }
+      });
+    };
+    ajaxSend(formData);
+  });
 });
