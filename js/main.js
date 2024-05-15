@@ -142,13 +142,35 @@ let currentModal;
 let modalDialog;
 let alertModal = document.querySelector("#alert-modal");
 
+
 const modalButtons = document.querySelectorAll("[data-toggle=modal]");
 modalButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
-    currentModal.document.querySelector(button.dataset.target);
+    event.preventDefault();
+    currentModal = document.querySelector(button.dataset.target);
     currentModal.classList.toggle("is-open");
+    modalDialog = currentModal.querySelector(".modal-dialog");
+    currentModal.addEventListener("click", event =>{
+      if(!event.composedPath().includes(modalDialog)) {
+        currentModal.classList.remove("is-open");
+      }
+    });
   });
 });
+document.addEventListener("keyup", (event) => {
+  if (
+    event.key == "Escape" &&
+    currentModal.classList.contains("is-open")
+  ) {
+    event.preventDefault();
+    currentModal.classList.toggle("is-open");
+  }
+});
+
+
+
+
+
 
 const inputs = document.getElementsByName('user-phone');
 console.log(inputs);
@@ -197,8 +219,15 @@ forms.forEach((form) => {
         if (response.ok) {
           thisForm.reset();
           console.log("form sended");
-          // currentModal.classList.toggle("is-open");
-          
+          currentModal.classList.remove("is-open");
+          alertModal.classList.add("is-open");
+          currentModal = alertModal;
+          modalDialog = currentModal.querySelector(".modal-dialog");
+          currentModal.addEventListener("click", event =>{
+            if(!event.composedPath().includes(modalDialog)) {
+              currentModal.classList.remove("is-open");
+            }
+          });
         } else {
           alert(response.statusText);
         }

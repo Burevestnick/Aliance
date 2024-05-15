@@ -191,7 +191,7 @@
 <div class="modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
-    <a href="" class="modal-close" data-toggle=modal>
+    <a href="" class="modal-close" data-toggle=modal data-target="#feedback-modal">
       <svg class="close-icon" width="24" height="24">
         <use href="img/sprites.svg#close"></use>
       </svg>
@@ -233,7 +233,7 @@
       </div>
       <!-- /.imput-group-wrapper -->
       <div class="modal-form-footer">
-        <button type="submit" class="button modal-form-button">
+        <button type="submit" class="button modal-form-button" data-toggle=modal data-target="#feedback-modal">
           Отправить заявку
         </button>
         <div class="notify">
@@ -250,10 +250,10 @@
   </div>
 </div>
 
-<!-- <div class="modal" id="alert-modal">
+<div class="modal" id="alert-modal">
   <div class="modal-dialog">
     <div class="thanks-modal-picture">
-      <a href="#" class="modal-close" data-toggle=modal>
+      <a href="#" class="modal-close" data-toggle=modal data-target="#alert-modal">
         <svg class="close-icon" width="24" height="24">
           <use href="img/sprites.svg#close"></use>
         </svg>
@@ -263,11 +263,11 @@
     <p class="modal-text">
       Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
     </p>
-    <button type="submit" class="button modal-form-button" data-toggle=modal>
+    <button type="submit" class="button modal-form-button" data-toggle=modal >
       Вернуться на главную
     </button>
   </div>
-</div> -->
+</div>
 
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/just-validate.production.min.js"></script>
