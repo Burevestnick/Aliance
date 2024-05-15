@@ -138,54 +138,17 @@ const swiperBlog = new Swiper(".blog-slider", {
       }
 })
 
-const modal = document.querySelector('.modal'); 
-const modalDialog = document.querySelector(".modal-dialog");
+let currentModal; 
+let modalDialog;
+let alertModal = document.querySelector("#alert-modal");
 
-document.addEventListener("click", (event) =>{
-  if (
-    event.target.dataset.toggle == "modal" ||
-    event.target.parentNode.dataset.toggle == "modal" ||
-    (!event.composedPath().includes(modalDialog) && 
-    modal.classList.contains("is-open"))
-  ){
-    event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
+const modalButtons = document.querySelectorAll("[data-toggle=modal]");
+modalButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    currentModal.document.querySelector(button.dataset.target);
+    currentModal.classList.toggle("is-open");
+  });
 });
-document.addEventListener("keyup", (event) => {
-  if (
-    event.key == "Escape" &&
-    modal.classList.contains("is-open")
-  ) {
-    event.preventDefault();
-    modal.classList.toggle("is-open");
-  }
-});
-
-const thanks = document.querySelector('.thanks-modal'); 
-const thanksDialog = document.querySelector(".thanks-modal-dialog");
-
-document.addEventListener("click", (event) =>{
-  if (
-    event.target.dataset.toggle == "thanks-modal" ||
-    event.target.parentNode.dataset.toggle == "thanks-modal" ||
-    (!event.composedPath().includes(thanksDialog) && 
-    thanks.classList.contains("is-open"))
-  ){
-    event.preventDefault();
-    thanks.classList.toggle("is-open");
-  }
-});
-document.addEventListener("keyup", (event) => {
-  if (
-    event.key == "Escape" &&
-    thanks.classList.contains("is-open")
-  ) {
-    event.preventDefault();
-    thanks.classList.toggle("is-open");
-  }
-});
-
 
 const inputs = document.getElementsByName('user-phone');
 console.log(inputs);
@@ -234,8 +197,8 @@ forms.forEach((form) => {
         if (response.ok) {
           thisForm.reset();
           console.log("form sended");
-          modal.classList.toggle("is-open");
-          thanks.classList.toggle("is-open");
+          // currentModal.classList.toggle("is-open");
+          
         } else {
           alert(response.statusText);
         }

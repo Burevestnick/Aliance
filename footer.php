@@ -188,7 +188,7 @@
   </div>
 </footer>
 
-<div class="modal">
+<div class="modal" id="feedback-modal">
   <div class="modal-dialog">
     <h2 class="modal-title">Есть вопросы?</h2>
     <a href="" class="modal-close" data-toggle=modal>
@@ -250,10 +250,10 @@
   </div>
 </div>
 
-<div class="thanks-modal">
-  <div class="thanks-modal-dialog">
+<!-- <div class="modal" id="alert-modal">
+  <div class="modal-dialog">
     <div class="thanks-modal-picture">
-      <a href="#" class="modal-close" data-toggle=thanks-modal>
+      <a href="#" class="modal-close" data-toggle=modal>
         <svg class="close-icon" width="24" height="24">
           <use href="img/sprites.svg#close"></use>
         </svg>
@@ -263,11 +263,11 @@
     <p class="modal-text">
       Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
     </p>
-    <button type="submit" class="button modal-form-button" data-toggle=thanks-modal>
+    <button type="submit" class="button modal-form-button" data-toggle=modal>
       Вернуться на главную
     </button>
   </div>
-</div>
+</div> -->
 
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/just-validate.production.min.js"></script>
