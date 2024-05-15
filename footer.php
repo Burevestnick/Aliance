@@ -233,7 +233,7 @@
       </div>
       <!-- /.imput-group-wrapper -->
       <div class="modal-form-footer">
-        <button type="submit" class="button modal-form-button" data-toggle=modal data-target="#feedback-modal">
+        <button type="submit" class="button modal-form-button">
           Отправить заявку
         </button>
         <div class="notify">
@@ -263,7 +263,7 @@
     <p class="modal-text">
       Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
     </p>
-    <button type="submit" class="button modal-form-button" data-toggle=modal >
+    <button class="button modal-form-button" data-toggle=modal data-target="#alert-modal">
       Вернуться на главную
     </button>
   </div>
