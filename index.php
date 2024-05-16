@@ -111,16 +111,16 @@
           <a href="/about.php" class="header-nav-link">О компании</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контрактное производство</a>
+          <a href="/production.php" class="header-nav-link">Контрактное производство</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Собственные торговые марки</a>
+          <a href="/trademarks.php" class="header-nav-link">Собственные торговые марки</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Новости</a>
+          <a href="/news.php" class="header-nav-link">Новости</a>
         </li>
         <li class="header-nav-item">
-          <a href="#" class="header-nav-link">Контакты</a>
+          <a href="/contacts.php" class="header-nav-link">Контакты</a>
         </li>
       </ul>
 
@@ -363,38 +363,9 @@
       </div>
     </section>
     <!-- section production -->
-    <section class="section trademarks">
-      <div class="container">
-        <div class="separator"></div>
-        <h2 class="section-title">собственные торговые марки</h2>
-        <div class="trademark-cards">
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprites.svg#agtech"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AG-Tech</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-          <div class="trademark-card">
-            <svg class="trademark-card-logo">
-              <use href="img/sprites.svg#ap"></use>
-            </svg>
-            <h3 class="trademark-card-title">Автохимия AP</h3>
-            <p class="trademark-card-text">
-              Для современного мира разбавленное изрядной долей эмпатии,
-              рациональное мышление создаёт предпосылки для поставленных
-              обществом задач.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /.trademark-cards -->
-    </section>
+    <?php $block_title = "собственные торговые марки"; include_once('./template-parts/trademarks-block.php')?>
     <!-- /.section trademarks -->
+    
     <section class="section founder">
       <img src="img/founderbg.jpeg" alt="Основатель" class="founder-photo" />
       <div class="container">
@@ -423,6 +394,7 @@
       </div>
     </section>
     <!-- /.section founder -->
+
     <div class="section section clients">
       <div class="container">
         <div class="clients-wrapper">
@@ -606,5 +578,4 @@
     <?php include_once('footer.php')?>
 
     
-  </body>
-</html>
+  
