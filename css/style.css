@@ -9,6 +9,7 @@ html {
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueBook.woff") format("woff");
+  font-display: swap;
   font-weight: normal;
   font-style: normal;
 }
