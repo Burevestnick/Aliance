@@ -1,4 +1,6 @@
 
+
+
 const navbar = document.querySelector(".navbar");
 const logoLight = document.querySelector(".logo-light");
 const logoDark = document.querySelector(".logo-dark");
@@ -219,7 +221,7 @@ forms.forEach((form) => {
         if (response.ok) {
           thisForm.reset();
           console.log("form sended");
-          currentModal.classList.remove("is-open");
+          currentModal.classList.toggle("is-open");
           alertModal.classList.add("is-open");
           currentModal = alertModal;
           modalDialog = currentModal.querySelector(".modal-dialog");

@@ -1,6 +1,10 @@
     <section class="cta">
       <div class="bg-gray section-cta">
+      <picture>
+        <source type="image/webp" srcset="img/AgSpray.webp">
+        <source type="image/jpeg" srcset="img/AgSpray.png">
         <img src="img/AgSpray.png" alt="call to action" class="cta-image" />
+      </picture>
         <div class="cta-form-wrapper container">
           <form action="handler.php" method="POST" class="cta-form">
             <h2 class="section-title cta-form-title">Хотите сотрудничать?</h2>
@@ -35,7 +39,7 @@
             </div>
             <!-- /.imput-group-wrapper -->
             <div class="cta-form-footer">
-              <button type="submit" class="button cta-form-button">
+              <button type="submit" class="button cta-form-button" data-target="#alert-modal">
                 Отправить заявку
               </button>
               <div class="notify">

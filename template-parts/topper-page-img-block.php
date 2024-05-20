@@ -14,5 +14,10 @@
       </div>
     </div>
   </div>
+  <picture>
+    <source type="image/webp" srcset="img/avto-him-topper.webp">
+    <source type="image/jpeg" srcset="img/avto-him-topper.png">
+    <img src="img/avto-him-topper.png" alt="header" class="topper-page-img-photo" />
+  </picture>
   <img src="img/avto-him-topper.png" alt="" class="topper-page-img-photo">
 </section>
