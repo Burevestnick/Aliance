@@ -221,7 +221,7 @@ forms.forEach((form) => {
         if (response.ok) {
           thisForm.reset();
           console.log("form sended");
-          currentModal.classList.toggle("is-open");
+          currentModal.classList.remove("is-open");
           alertModal.classList.add("is-open");
           currentModal = alertModal;
           modalDialog = currentModal.querySelector(".modal-dialog");

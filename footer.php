@@ -177,7 +177,7 @@
             <p class="copyright">
               &copy; <?php echo date('d.m.Y');?> «Aliance Production». Все права защищены.
             </p>
-            <a href="#" class="footer-policy">Политики конфиденциальности</a>
+            <a href="privacy-policy.php" class="footer-policy">Политика конфиденциальности</a>
           </div>
           <!-- /.footer-legal -->
           <div class="footer-author">

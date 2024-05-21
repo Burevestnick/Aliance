@@ -729,7 +729,7 @@ body {
 
 .section-cta {
   position: relative;
-  padding-top: 6.25rem;
+  padding-top: 2.125rem;
   margin-top: 9.375rem;
   padding-bottom: 6.25rem;
 }
@@ -986,10 +986,16 @@ body {
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 160%;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-policy:hover {
+  color: rgb(171, 181, 199);
 }
 
 .made-in {
-  color: rgb(130, 138, 153);
+  color: rgb(177, 186, 204);
   font-family: Noto Sans;
   font-size: 0.75rem;
   font-weight: 400;
@@ -1004,6 +1010,7 @@ body {
 
 .footer-email-address-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .modal {
@@ -1094,6 +1101,147 @@ body {
   background-size: cover;
 }
 
+.map {
+  width: 100%;
+}
+
+.mapsml {
+  width: 100%;
+}
+
+.mapsml {
+  display: none;
+}
+
+.contact-info {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.contact-phone {
+  color: rgb(41, 45, 51);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 160%;
+  text-decoration-line: underline;
+  white-space: nowrap;
+}
+
+
+
+.contact-info-text {
+  color: rgb(41, 45, 51);
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration: none;
+  font-style: normal;
+  white-space: nowrap;
+}
+
+.contact-text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #5c8ee6;
+  margin-right: 1rem;
+}
+
+.contact-social {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.production-title {
+  color: rgb(41, 45, 51);
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 0;
+}
+
+.production-text {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+  margin: 10px 0;
+}
+
+.more-wrapper {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-top: 1.5625rem;
+}
+
+.more-icon {
+  transition: transform 0.4s;
+}
+
+.more-wrapper:hover .more-icon {
+  transform: rotate(360deg);
+}
+
+.more-text {
+  color: rgb(92, 142, 230);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 160%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+
+.policy-text {
+  color: rgb(41, 45, 51);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.expert-content {
+  display: flex;
+  gap: 6.25rem;
+}
+
+.expert-title {
+  color: rgb(41, 45, 51);
+  font-family: Bebas Neue;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 120%;
+  width: 70%;
+}
+
+.expert-text {
+  color: rgb(130, 138, 153);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.expert-img {
+  max-width: 30rem;
+}
+
+.about-features-text {
+  color: rgb(41, 45, 51);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
 @media (max-width: 1570px) {
   html {
     font-size: 0.875rem;
@@ -1175,6 +1323,12 @@ body {
   }
   .footer-phone {
     font-size: 22px;
+  }
+  .contact-phone {
+    font-size: 28px;
+  }
+  .contact-info-text {
+    font-size: 1rem;
   }
 }
 
@@ -1351,6 +1505,17 @@ body {
   .topper-page-img-photo {
     top: 20px;
   }
+  .contact-info-text {
+    white-space: wrap;
+  }
+  .expert-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .expert-title {
+    width: 100%;
+  }
 }
 
 @media (max-width: 815px) {
@@ -1393,7 +1558,29 @@ body {
   .topper-page-img-photo {
     display: none;
   }
+  .contact-wrapper {
+    display: block;
+  }
+  .contact-info {
+    flex-direction: column;
+    padding: 0;
+    margin-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 1.125rem;
+  }
+  .map {
+    margin-bottom: 3.125rem;
+  }
+  .contact-info-text {
+    color: rgb(41, 45, 51);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 160%;
+  }
 }
+
 
 @media (max-width: 590px) {
   .container {
@@ -1470,6 +1657,18 @@ body {
   .topper-page-clean {
     padding-top: 50px;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .map {
+    display: none;
+  }
+  .mapsml {
+    display: block;
+    margin-bottom: 3.125rem;
+    height: 31.25rem;
+    object-fit: cover;
   }
 }
 
