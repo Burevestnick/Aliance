@@ -199,12 +199,12 @@
           <!-- кнопки навигации вперед/назад -->
           <div class="slider-buttons">
             <div class="slider-button-prev">
-              <svg class="features-svg" width="48" height="36">
+              <svg class="features-svg" width="48" height="36" fill="#FFFFFF">
                 <use href="img/sprites.svg#arrow-prev"></use>
               </svg>
             </div>
             <div class="slider-button-next">
-              <svg class="features-svg" width="48" height="36">
+              <svg class="features-svg" width="48" height="36" fill="#FFFFFF">
                 <use href="img/sprites.svg#arrow-next"></use>
               </svg>
             </div>
@@ -259,12 +259,12 @@
           <!-- If we need navigation buttons -->
           <div class="steps-buttons primary-buttons-wrapper">
             <div class="steps-button-prev primary-button-prev">
-              <svg class="features-svg" width="36" height="24">
+              <svg class="features-svg" width="36" height="24" fill="#FFFFFF">
                 <use href="img/sprites.svg#arrow-prev"></use>
               </svg>
             </div>
             <div class="steps-button-next primary-button-next">
-              <svg class="features-svg" width="36" height="24">
+              <svg class="features-svg" width="36" height="24" fill="#FFFFFF">
                 <use href="img/sprites.svg#arrow-next"></use>
               </svg>
             </div>
@@ -599,12 +599,12 @@
             <a href="#" class="steps-link">Весь блог</a>
             <div class="blog-buttons primary-buttons-wrapper">
               <div class="blog-button-prev primary-button-prev">
-                <svg class="features-svg" width="36" height="24">
+                <svg class="features-svg" width="36" height="24" fill="#FFFFFF">
                   <use href="img/sprites.svg#arrow-prev"></use>
                 </svg>
               </div>
               <div class="blog-button-next primary-button-next">
-                <svg class="features-svg" width="36" height="24">
+                <svg class="features-svg" width="36" height="24" fill="#FFFFFF">
                   <use href="img/sprites.svg#arrow-next"></use>
                 </svg>
               </div>
